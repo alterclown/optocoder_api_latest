@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptocoderInventoryApi", "OptocoderInventoryApi\OptocoderInventoryApi.csproj", "{8C80AE85-2E57-4BEA-9495-F9CF6D397E00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptocoderInventoryApi", "OptocoderInventoryApi\OptocoderInventoryApi.csproj", "{8C80AE85-2E57-4BEA-9495-F9CF6D397E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptocoderSalesApi", "OptocoderSalesApi\OptocoderSalesApi.csproj", "{24AD5F03-809F-48F3-B76E-5949486574C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptocoderApiGateway", "OptocoderApiGateway\OptocoderApiGateway.csproj", "{C3B80021-4514-46B3-91FA-10FDD9B5598E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{8C80AE85-2E57-4BEA-9495-F9CF6D397E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C80AE85-2E57-4BEA-9495-F9CF6D397E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C80AE85-2E57-4BEA-9495-F9CF6D397E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AD5F03-809F-48F3-B76E-5949486574C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AD5F03-809F-48F3-B76E-5949486574C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AD5F03-809F-48F3-B76E-5949486574C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AD5F03-809F-48F3-B76E-5949486574C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B80021-4514-46B3-91FA-10FDD9B5598E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B80021-4514-46B3-91FA-10FDD9B5598E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B80021-4514-46B3-91FA-10FDD9B5598E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B80021-4514-46B3-91FA-10FDD9B5598E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

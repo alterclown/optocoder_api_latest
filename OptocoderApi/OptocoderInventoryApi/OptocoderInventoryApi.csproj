@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Inventory.Data\Dto\" />
-    <Folder Include="Inventory.Data\Utilities\" />
     <Folder Include="Inventory.Data\ViewModels\" />
   </ItemGroup>
 
