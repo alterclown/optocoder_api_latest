@@ -14,6 +14,19 @@
       ]
     },
     {
+      "UpstreamPathTemplate": "/apigateway/CreateBranch",
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "DownstreamPathTemplate": "/api/branch/CreateNewBranch",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44368
+        }
+      ]
+    },
+    {
       "UpstreamPathTemplate": "/apigateway/WeatherForecast",
       "UpstreamHttpMethod": [ "GET", "DELETE" ],
       "DangerousAcceptAnyServerCertificateValidator": true,

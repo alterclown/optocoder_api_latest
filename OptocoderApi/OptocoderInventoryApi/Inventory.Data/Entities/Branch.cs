@@ -1,10 +1,12 @@
-﻿using System.Diagnostics.Metrics;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+﻿using Microsoft.EntityFrameworkCore;
+using OptocoderInventoryApi.Inventory.Data.Utilities;
+using System.ComponentModel.DataAnnotations;
 
 namespace OprocoderInventoryApi.Inventory.Data.Entities
 {
-    public partial class Branch
+    public partial class Branch: AuditableEntity
     {
+        [Key]
         public int BranchId { get; set; }
         public string BranchName { get; set; }
         public string BranchDescription { get; set; }

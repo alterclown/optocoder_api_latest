@@ -2,6 +2,7 @@
 using OprocoderInventoryApi.Inventory.Data.Context;
 using OprocoderInventoryApi.Inventory.Data.Entities;
 using System.Net.NetworkInformation;
+using static OptocoderInventoryApi.Inventory.Data.Utilities.Enums;
 
 namespace OprocoderInventoryApi.Inventory.Repository
 {
@@ -26,6 +27,11 @@ namespace OprocoderInventoryApi.Inventory.Repository
         {
             try
             {
+                branch.CreatedBy = "Admin";
+                branch.UpdatedBy = "Admin";
+                branch.CreatedDate = DateTime.UtcNow;
+                branch.UpdatedDate = DateTime.UtcNow;
+                branch.Status = (int)Status.Active;
                 _context.Branch.Add(branch);
                 await _context.SaveChangesAsync();
                 return branch;
