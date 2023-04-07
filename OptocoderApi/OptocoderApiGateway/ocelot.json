@@ -1,6 +1,9 @@
 ﻿{
   "Routes": [
     {
+      "UpstreamPathTemplate": "/apigateway/Branch",
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
       "DownstreamPathTemplate": "/api/branch/GetBranchList",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -8,21 +11,20 @@
           "Host": "localhost",
           "Port": 44368
         }
-      ],
-      "UpstreamPathTemplate": "/gateway/Branch",
-      "UpstreamHttpMethod": [ "GET"]
+      ]
     },
     {
-      "DownstreamPathTemplate": "/api/WeatherForecast",
+      "UpstreamPathTemplate": "/apigateway/WeatherForecast",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "DownstreamPathTemplate": "/api/GetWeatherForecast",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
           "Port": 7123
         }
-      ],
-      "UpstreamPathTemplate": "/gateway/weather",
-      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+      ]
     }
   ]
 }
